@@ -1,6 +1,6 @@
 # Biopharma Publication Evidence Dashboard
 
-A cross-platform agent skill that converts one biomedical or biopharma publication into a source-traceable, continuous HTML evidence appraisal.
+A cross-platform agent skill that converts one biomedical or biopharma publication into a source-traceable, continuous HTML statistical evidence appraisal.
 
 The project is designed from an industry biostatistics perspective. It goes beyond article summarization by making the statistical methodology, effect estimates, uncertainty, robustness, interpretation, limitations, and decision relevance visible in one top-to-bottom report.
 
