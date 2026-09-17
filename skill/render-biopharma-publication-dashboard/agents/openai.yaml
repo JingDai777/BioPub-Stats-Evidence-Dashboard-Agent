@@ -1,0 +1,7 @@
+interface:
+  display_name: "Biopharma Evidence Appraisal"
+  short_description: "Create source-traceable biostatistical appraisals"
+  default_prompt: "Use $render-biopharma-publication-dashboard to classify this publication and create a continuous source-traceable biostatistical evidence dashboard."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{PUBLICATION_TITLE}} — Biostatistical evidence appraisal</title>
+  <style>
+    :root{--ink:#17202a;--muted:#52606d;--paper:#f5f6f7;--surface:#fff;--line:#d8dde2;--accent:#334155;--accent-dark:#1e293b;--accent-soft:#e2e8f0;--warn:#9a3412;--warn-soft:#fff7ed;--info:#075985;--info-soft:#e0f2fe}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#075985;text-underline-offset:3px}header,main,footer{max-width:980px;margin:auto;padding:0 28px}header{padding-top:48px;padding-bottom:24px}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}h1{max-width:900px;margin:.45rem 0 .8rem;font-size:clamp(2rem,5vw,3.35rem);line-height:1.08}h2{margin:0 0 1rem;font-size:1.55rem;line-height:1.25;color:var(--accent-dark)}h3{margin:1.15rem 0 .45rem;font-size:1.05rem}.citation,.muted{color:var(--muted)}.badges{display:flex;flex-wrap:wrap;gap:7px;margin:1rem 0}.badge{display:inline-block;border:1px solid #94a3b8;border-radius:999px;background:var(--accent-soft);padding:5px 10px;font-size:.82rem}.executive-summary{margin:8px 0 28px;padding:24px;background:var(--accent-dark);color:#fff;border-radius:12px}.executive-summary h2{color:#fff}.summary-item{padding:13px 0;border-top:1px solid rgba(255,255,255,.3)}.summary-item:first-of-type{border-top:0}.summary-item strong{display:block;margin-bottom:3px;color:#cbd5e1}.report{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:32px;box-shadow:0 8px 24px rgba(15,23,42,.06)}.report-section{padding:28px;border-top:1px solid var(--line)}.report-section:first-child{border-top:0}.section-number{display:block;margin-bottom:4px;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}.detail-list{display:grid;grid-template-columns:minmax(180px,240px) 1fr;gap:0;margin:0}.detail-list dt,.detail-list dd{margin:0;padding:10px 0;border-bottom:1px solid #e8ecef}.detail-list dt{padding-right:20px;font-weight:750}.detail-list dd{color:#263645}.callout{margin:18px 0 0;padding:16px 18px;border-left:5px solid var(--accent);background:var(--accent-soft)}.warning{border-left-color:var(--warn);background:var(--warn-soft)}.interpretation{border-left-color:var(--info);background:var(--info-soft)}.table-wrap{overflow-x:auto;margin-top:12px}table{width:100%;min-width:820px;border-collapse:collapse}caption{text-align:left;font-weight:750;margin-bottom:9px}th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf0f3;font-size:.92rem}tbody tr:nth-child(even){background:#fafbfc}.source-map li{margin:.65rem 0}footer{padding-top:0;padding-bottom:42px;color:var(--muted);font-size:.9rem}:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}@media(max-width:700px){header,main,footer{padding-left:16px;padding-right:16px}.report-section,.executive-summary{padding:20px}.detail-list{display:block}.detail-list dt{padding-bottom:2px;border-bottom:0}.detail-list dd{padding-top:0}.report{border-radius:8px}}@media print{body{background:#fff;font-size:10.5pt}header,main,footer{max-width:none;padding-left:0;padding-right:0}.report{border:0;box-shadow:none}.report-section{padding:18px 0}.executive-summary{background:#fff;color:var(--ink);border:2px solid var(--accent-dark)}.executive-summary h2,.executive-summary .summary-item strong{color:var(--accent-dark)}.summary-item{border-color:var(--line)}a{color:inherit;text-decoration:none}table{min-width:0}.report-section,table,.callout{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Biostatistical evidence appraisal</div>
+    <h1>{{PUBLICATION_TITLE}}</h1>
+    <p class="citation">{{FULL_CITATION}}</p>
+    <div class="badges"><span class="badge">{{PUBLICATION_SUBTYPE}}</span><span class="badge">Classification confidence: {{CLASSIFICATION_CONFIDENCE}}</span><span class="badge">{{ACCESS_STATUS}}</span></div>
+    <p><a href="{{SOURCE_URL}}">Open source publication</a></p>
+  </header>
+  <main>
+    <section class="executive-summary" aria-labelledby="executive-title">
+      <h2 id="executive-title">Executive appraisal</h2>
+      <div class="summary-item"><strong>Reported finding or recommendation</strong>{{REPORTED_FINDING}}</div>
+      <div class="summary-item"><strong>Biostatistical interpretation</strong>{{BIOSTATISTICAL_INTERPRETATION}}</div>
+      <div class="summary-item"><strong>Primary limitation</strong>{{PRIMARY_LIMITATION}}</div>
+      <div class="summary-item"><strong>Decision relevance</strong>{{DECISION_RELEVANCE}}</div>
+    </section>
+    <article class="report" aria-label="Continuous publication appraisal">
+      <section class="report-section" aria-labelledby="purpose-title">
+        <span class="section-number">Section 1</span><h2 id="purpose-title">Purpose, scope, and decision context</h2>
+        <dl class="detail-list"><dt>Publication type</dt><dd>{{PUBLICATION_SUBTYPE}}</dd><dt>Purpose and objectives</dt><dd>{{PUBLICATION_PURPOSE}}</dd><dt>Population or context</dt><dd>{{POPULATION_OR_CONTEXT}}</dd><dt>Subject, intervention, exposure, or test</dt><dd>{{SUBJECT_INTERVENTION_OR_EXPOSURE}}</dd><dt>Comparator, reference, or focus</dt><dd>{{COMPARATOR_REFERENCE_OR_FOCUS}}</dd><dt>Intended use or decision context</dt><dd>{{INTENDED_USE_DECISION_CONTEXT}}</dd></dl>
+      </section>
+      <section class="report-section" aria-labelledby="evidence-title">
+        <span class="section-number">Section 2</span><h2 id="evidence-title">Evidence base and design</h2>
+        <dl class="detail-list"><dt>Evidence base</dt><dd>{{EVIDENCE_BASE}}</dd><dt>Design or document-development approach</dt><dd>{{DESIGN_OR_APPROACH}}</dd><dt>Data sources</dt><dd>{{DATA_SOURCES}}</dd><dt>Analysis population, dataset, or corpus</dt><dd>{{ANALYSIS_POPULATION}}</dd><dt>Prespecification</dt><dd>{{PRESPECIFICATION_STATUS}}</dd></dl>
+      </section>
+      <section class="report-section" aria-labelledby="methods-title">
+        <span class="section-number">Section 3</span><h2 id="methods-title">Methods and statistical approach</h2>
+        <dl class="detail-list"><dt>Methods</dt><dd>{{METHODS_AND_APPROACH}}</dd><dt>Endpoints, outputs, or performance measures</dt><dd>{{ENDPOINTS_OUTPUTS_MEASURES}}</dd><dt>Statistical model or synthesis</dt><dd>{{STATISTICAL_MODEL_OR_SYNTHESIS}}</dd><dt>Effect measures or metrics</dt><dd>{{EFFECT_MEASURES_METRICS}}</dd><dt>Covariates, thresholds, or model assumptions</dt><dd>{{COVARIATES_THRESHOLDS_ASSUMPTIONS}}</dd><dt>Missing data or unevaluable observations</dt><dd>{{MISSING_UNEVALUABLE_DATA}}</dd><dt>Multiplicity and model selection</dt><dd>{{MULTIPLICITY_MODEL_SELECTION}}</dd><dt>Validation</dt><dd>{{VALIDATION_APPROACH}}</dd><dt>Sensitivity and robustness analyses</dt><dd>{{SENSITIVITY_ROBUSTNESS}}</dd></dl>
+      </section>
+      <section class="report-section" aria-labelledby="specialized-title">
+        <span class="section-number">Section 4</span><h2 id="specialized-title">Subtype-specific statistical appraisal</h2>
+        <p>{{SUBTYPE_SPECIFIC_APPRAISAL}}</p>
+        <dl class="detail-list"><dt>Methodological quality</dt><dd>{{QUALITY_OR_BIAS_CONCERNS}}</dd><dt>Key assumptions</dt><dd>{{KEY_ASSUMPTIONS}}</dd><dt>Uncertainty characterization</dt><dd>{{UNCERTAINTY_CHARACTERIZATION}}</dd><dt>Internal and external validity</dt><dd>{{VALIDITY_ASSESSMENT}}</dd></dl>
+      </section>
+      <section class="report-section" aria-labelledby="findings-title">
+        <span class="section-number">Section 5</span><h2 id="findings-title">Reported findings</h2>
+        <div class="table-wrap"><table><caption>Key findings with quantitative and methodological context</caption><thead><tr><th>Topic, outcome, or recommendation</th><th>Analysis population / evidence basis</th><th>Reported finding</th><th>Estimate, uncertainty, or strength</th><th>Analysis context</th><th>Source</th></tr></thead><tbody>{{FINDING_ROWS_HTML}}</tbody></table></div>
+      </section>
+      <section class="report-section" aria-labelledby="interpretation-title">
+        <span class="section-number">Section 6</span><h2 id="interpretation-title">Conclusions and biostatistical interpretation</h2>
+        <h3>Author conclusions</h3><p>{{AUTHOR_CONCLUSIONS}}</p>
+        <dl class="detail-list"><dt>Magnitude or performance</dt><dd>{{MAGNITUDE_PERFORMANCE}}</dd><dt>Precision</dt><dd>{{PRECISION_ASSESSMENT}}</dd><dt>Robustness</dt><dd>{{ROBUSTNESS_ASSESSMENT}}</dd><dt>Predictive, prognostic, descriptive, or causal meaning</dt><dd>{{INTERPRETIVE_CLASSIFICATION}}</dd></dl>
+        <div class="callout interpretation"><strong>Reviewer synthesis</strong><p>{{REVIEWER_SYNTHESIS}}</p></div>
+      </section>
+      <section class="report-section" aria-labelledby="limitations-title">
+        <span class="section-number">Section 7</span><h2 id="limitations-title">Limitations and applicability</h2>
+        {{LIMITATIONS_HTML}}
+        <dl class="detail-list"><dt>Bias and uncertainty</dt><dd>{{BIAS_AND_UNCERTAINTY}}</dd><dt>Generalizability or transportability</dt><dd>{{GENERALIZABILITY}}</dd><dt>Applicability</dt><dd>{{APPLICABILITY}}</dd></dl>
+        <div class="callout warning"><strong>Important context</strong><p>{{IMPORTANT_CONTEXT}}</p></div>
+      </section>
+      <section class="report-section" aria-labelledby="transparency-title">
+        <span class="section-number">Section 8</span><h2 id="transparency-title">Transparency and reproducibility</h2>
+        <dl class="detail-list"><dt>Registration or protocol</dt><dd>{{REGISTRATION_PROTOCOL}}</dd><dt>Data and code availability</dt><dd>{{DATA_CODE_AVAILABILITY}}</dd><dt>Funding and sponsor role</dt><dd>{{FUNDING}}</dd><dt>Conflicts of interest</dt><dd>{{CONFLICTS}}</dd></dl>
+      </section>
+      <section class="report-section" aria-labelledby="extraction-title">
+        <span class="section-number">Section 9</span><h2 id="extraction-title">Access and extraction notes</h2><p>{{ACCESS_LIMITATIONS}}</p><p>{{DISCREPANCIES}}</p>
+      </section>
+      <section class="report-section source-map" id="source-map" aria-labelledby="source-map-title">
+        <span class="section-number">Section 10</span><h2 id="source-map-title">Source map</h2><ol>{{SOURCE_MAP_HTML}}</ol>
+      </section>
+    </article>
+  </main>
+  <footer><p>Generated {{GENERATED_AT}}. This dashboard supports evidence appraisal. It is not medical advice and does not replace independent scientific, clinical, statistical, or regulatory review.</p></footer>
+</body>
+</html>
