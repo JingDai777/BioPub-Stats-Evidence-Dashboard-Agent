@@ -53,7 +53,10 @@ biopharma-publication-evidence-dashboard/
 │       ├── references/
 │       └── scripts/
 └── dist/
-    └── render-biopharma-publication-dashboard.zip
+│   └── render-biopharma-publication-dashboard.zip
+├── examples/
+    └── oreilly-2026/
+      └── index.html
 ```
 
 `skill/render-biopharma-publication-dashboard/` is the canonical skill source. The `dist/` ZIP is a generated distribution artifact.
